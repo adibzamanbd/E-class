@@ -48,7 +48,7 @@ nav {
 .check svg {
   fill: #000000;
 }
-a {
+nav a {
   font-size: 19px;
   font-weight: 100;
   color: #000000;
@@ -121,8 +121,76 @@ nav #slidebar-active {
   width: 31%;
   margin-top: 2%;
 }
-
-
+main {
+  width: 100%;
+  height: 100%;
+}
+.blog-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 3rem;
+  margin: 5% 0;
+}
+.blog-section h3 {
+  font-size: 2.7rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 6vh;
+}
+.blog-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.blog-box {
+  max-width: 31%;
+  height: 620px;
+  background-color: #fff;
+  border: 1px solid #818181;
+}
+.blog-box img {
+  width: 100%;
+}
+.blog-text {
+  padding: 6%;
+}
+.blog-box h1 {
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 35px;
+  color: #000000;
+  max-width: 100%;
+}
+.blog-box p {
+  font-size: 17px;
+  font-weight: 300;
+  margin-top: 1.5rem;
+  color: #818181;
+  padding-bottom: 5%;
+}
+a.blog-link {
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  color: #000000;
+  text-decoration: none;
+}
+a.blog-link:hover {
+  font-size: 17px;
+  font-weight: 600;
+  transition: all ease-in 0.2s;
+}
 @media (max-width: 791px) {
   #course {
     display: none;
@@ -164,5 +232,17 @@ nav #slidebar-active {
   }
   .banner-img img {
     width: 80%;
+  }
+}
+@media (max-width: 786px) {
+  .blog-cont {
+    flex-direction: column;
+    gap: 5vh;
+  }
+  .blog-box {
+    max-width: 90%;
+    width: 100%;
+    height: 0%;
+    flex-direction: row;
   }
 }
