@@ -298,6 +298,101 @@ a.blog-link:hover {
   width: 100%;
   height: 100%;
 }
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: #818181;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+.footer-text {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  max-width: 90%;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.footer-logo {
+  max-width: 30%;
+  width: 100%;
+}
+.footer-logo h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+.footer-logo p {
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 70%;
+  color: #fff;
+  width: 100%;
+  line-height: 23px;
+  padding: 20px 0;
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.footer-contact h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+.adress,
+.phone,
+.mail {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.adress,
+.phone,
+.mail p {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.footer-links h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+}
+.footer-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row;
+  margin-top: 20px;
+}
+footer h5 {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 2rem;
+}
 @media (max-width: 791px) {
   #course {
     display: none;
@@ -413,5 +508,39 @@ a.blog-link:hover {
 @media (max-width: 393px) {
   .courses-img img {
     width: 5rem;
+  }
+}
+@media (max-width: 786px) {
+  .footer-text {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200%;
+    max-width: 100%;
+  }
+  .footer-logo p {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-links {
+    align-items: center;
+    margin-top: 2rem;
+  }
+  footer h5 {
+    text-align: center;
+  }
+}
+@media (max-width: 318px) {
+  .footer-media {
+    flex-direction: column;
+    margin-top: 2rem;
   }
 }
