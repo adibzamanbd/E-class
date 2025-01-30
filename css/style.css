@@ -228,6 +228,76 @@ a.blog-link:hover {
 .about-img img {
   width: 100%;
 }
+.courses-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  flex-direction: column;
+}
+.courses-section h4 {
+  font-size: 2.7rem;
+  font-weight: 400;
+}
+.courses-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2%;
+  margin: 5rem 5rem;
+}
+.courses-box {
+  max-width: 46%;
+  height: 410px;
+  background-color: #fff;
+  border: 1px solid #818181;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  flex-direction: column;
+}
+.courses-img {
+  margin: 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courses-text {
+  padding: 6%;
+}
+.courses-text h1 {
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 35px;
+  color: #000000;
+  max-width: 100%;
+}
+.courses-text p {
+  font-size: 17px;
+  font-weight: 300;
+  margin-top: 1.5rem;
+  color: #818181;
+  padding-bottom: 5%;
+}
+.courses-text a {
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  color: #000000;
+  text-decoration: none;
+}
+.video-sec {
+  width: 90%;
+  margin-bottom: 5%;
+  height: 35rem;
+}
+.video-sec iframe {
+  width: 100%;
+  height: 100%;
+}
 @media (max-width: 791px) {
   #course {
     display: none;
@@ -287,5 +357,61 @@ a.blog-link:hover {
   .about-section {
     flex-direction: column;
     gap: 1.8rem;
+  }
+}
+@media (max-width: 987px) {
+  .courses-cont {
+    flex-direction: column;
+    gap: 5vh;
+  }
+  .courses-box {
+    max-width: 90%;
+    width: 100%;
+    height: 0%;
+    flex-direction: row;
+    gap: 15%;
+  }
+  .courses-img img {
+    width: 380%;
+  }
+}
+@media (max-width: 855px) {
+  .courses-cont {
+    flex-direction: column;
+    gap: 5vh;
+  }
+  .courses-box {
+    max-width: 90%;
+    width: 100%;
+    height: 0%;
+    flex-direction: column;
+    gap: 15%;
+  }
+  .courses-img img {
+    width: 50%;
+  }
+}
+@media (max-width: 591px) {
+  .courses-cont {
+    flex-direction: column;
+    gap: 5vh;
+  }
+  .courses-box {
+    max-width: 100%;
+    width: 100%;
+    height: 0%;
+    flex-direction: column;
+    gap: 15%;
+  }
+  .courses-img img {
+    width: 80%;
+  }
+  .courses-img {
+    flex-direction: row;
+  }
+}
+@media (max-width: 393px) {
+  .courses-img img {
+    width: 5rem;
   }
 }
